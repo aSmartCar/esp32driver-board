@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -26638,7 +26638,6 @@ Created 2014-06-05, Karrer Zheng&lt;br&gt;
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
-<part name="R1.16" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="SW2" library="HW1_switches" deviceset="434111025826" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="FRAME3" library="frames" deviceset="A4L-LOC" device=""/>
@@ -26820,10 +26819,6 @@ ESP32 Driver</text>
 </instance>
 <instance part="GND29" gate="1" x="73.66" y="71.12" smashed="yes">
 <attribute name="VALUE" x="71.12" y="68.58" size="1.778" layer="96"/>
-</instance>
-<instance part="R1.16" gate="G$1" x="226.06" y="58.42" smashed="yes">
-<attribute name="NAME" x="222.25" y="59.9186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="222.25" y="55.118" size="1.778" layer="96"/>
 </instance>
 <instance part="SW2" gate="G$1" x="40.64" y="132.08" smashed="yes">
 <attribute name="NAME" x="36.83" y="130.175" size="1.778" layer="95" rot="R90"/>
@@ -27020,9 +27015,6 @@ ESP32 Driver</text>
 <pinref part="+3V13" gate="G$1" pin="+3V3"/>
 <wire x1="205.74" y1="63.5" x2="205.74" y2="58.42" width="0.1524" layer="91"/>
 <junction x="205.74" y="58.42"/>
-<pinref part="R1.16" gate="G$1" pin="1"/>
-<wire x1="220.98" y1="58.42" x2="215.9" y2="58.42" width="0.1524" layer="91"/>
-<junction x="215.9" y="58.42"/>
 </segment>
 <segment>
 <pinref part="R1.1" gate="G$1" pin="1"/>
@@ -27056,11 +27048,6 @@ ESP32 Driver</text>
 <pinref part="IC1" gate="G$1" pin="GPIO2"/>
 <wire x1="137.16" y1="144.78" x2="142.24" y2="144.78" width="0.1524" layer="91"/>
 <label x="142.24" y="144.78" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R1.16" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="58.42" x2="236.22" y2="58.42" width="0.1524" layer="91"/>
-<label x="236.22" y="58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="96.52" y1="55.88" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
